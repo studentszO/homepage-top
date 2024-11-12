@@ -68,12 +68,15 @@ header > .head-photo {
 header img {
   margin: 10%;
   border-radius: 3px;
+}
+
+.box-shadow {
   box-shadow:
     rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(255, 255, 255, 0.1) 0px 0px 8px;
 }
-
-header section {
+header section,
+main {
   padding: 0 7%;
 }
 
@@ -123,6 +126,7 @@ h2::first-letter {
 .about-links {
   display: flex;
   justify-content: center;
+  margin-bottom: 15%;
 }
 
 .about-links div {
@@ -136,14 +140,84 @@ h2::first-letter {
   border-bottom: 0;
 }
 
-.about-links svg {
+svg {
   width: 23px;
   fill: #dadada;
   filter: drop-shadow(0px 2px 10px rgba(17, 17, 17, 0.65));
   cursor: pointer;
 }
 
-.about-links svg:focus,
-.about-links svg:hover {
+svg:focus,
+svg:hover {
   fill: #c0db82;
+}
+
+/* MAIN PART */
+.bottom-border {
+  border: solid;
+  border-image-source: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    #b7ce82 0%,
+    #becf95 90%
+  );
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-image-slice: 1;
+  border-width: 2px;
+}
+
+.gradient-bg {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgb(46, 46, 46) 0%,
+    rgb(26, 26, 26) 90%
+  );
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 5% 0;
+}
+
+.project-card {
+  width: 100%;
+  height: 400px;
+  border-radius: 3px;
+}
+
+.project-card img {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  border-bottom: 0;
+  opacity: 0.7;
+  border-radius: 3px 3px 0 0;
+}
+
+.project-desc {
+  padding: 5px 16px;
+}
+
+.project-desc p {
+  font-size: 0.8rem;
+  padding: 1px;
+}
+
+.project-desc > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  border-width: 2px;
+}
+
+.card-links {
+  display: flex;
+  gap: 10px;
+}
+
+.card-links svg {
+  width: 20px;
 }
