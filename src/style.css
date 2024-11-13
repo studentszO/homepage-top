@@ -274,7 +274,7 @@ footer picture {
   z-index: -1;
 }
 
-footer hr {
+footer hr.border {
   margin: 0;
   padding: 0;
   height: 3px;
@@ -360,9 +360,22 @@ footer hr {
   /* FOOTER */
   footer {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
-  footer hr {
+  .footer-container {
+    padding-right: 0;
+  }
+
+  footer picture > img {
+    width: 70%;
+    margin: auto;
+    border-radius: 3px;
+  }
+
+  footer hr.border {
     display: none;
   }
 }
