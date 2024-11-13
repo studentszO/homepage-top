@@ -159,6 +159,10 @@ hr {
   margin-top: -6px;
 }
 
+.project-card hr {
+  margin-top: 0;
+}
+
 .gradient-bg {
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
@@ -274,7 +278,7 @@ footer > picture > img {
   }
 
   hr {
-    margin-top: -9px;
+    margin-top: -7px;
   }
 
   .polygon-wrapper {
