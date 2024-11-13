@@ -210,6 +210,13 @@ svg:hover {
 .project-desc p {
   font-size: 0.8rem;
   padding: 1px;
+  height: 100px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .project-desc > div:first-of-type {
