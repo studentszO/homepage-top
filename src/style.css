@@ -64,9 +64,10 @@ header > .head-photo {
     0px -5px 35px rgba(0, 0, 0, 0.3);
 }
 
-header img {
+header picture > img {
   margin: 10%;
   border-radius: 3px;
+  width: 80%;
 }
 
 .box-shadow {
@@ -264,7 +265,7 @@ footer {
   margin-top: 10px;
 }
 
-footer > img {
+footer > picture > img {
   display: flex;
   width: 100%;
 }

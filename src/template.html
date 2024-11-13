@@ -14,16 +14,17 @@
         <div class="polygon-wrapper">
           <div class="polygon bg-pattern"></div>
         </div>
-        <img
-          class="box-shadow"
-          alt="Praline, rabbit"
-          srcset="
-            assets/praline-crop-800w.jpeg  800w,
-            assets/praline-400w.jpeg       600w,
-            assets/praline-800w.jpeg      1000w
-          "
-          src="assets/praline-800w.jpeg"
-        />
+        <picture>
+          <source
+            srcset="assets/praline-crop-800w.jpeg"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="box-shadow"
+            alt="Praline, rabbit reading with glasses"
+            src="assets/praline-800w.jpeg"
+          />
+        </picture>
         <h1 class="anton-regular text-shadow bg-pattern">Praline Silversword</h1>
       </div>
       <section class="quicksand-regular">
@@ -227,11 +228,13 @@
           </div>
         </div>
       </div>
-      <img srcset="
-            assets/call-me-1280w.jpeg  1280w,
-            assets/call-me.jpeg      450w
-          "
-          src="assets/call-me.jpeg" class="box-shadow">
+      <picture>
+        <source 
+          srcset="assets/call-me-1280w.jpeg"
+          media="(min-width: 1025px)"
+          />
+          <img src="assets/call-me.jpeg" alt="Praline, rabbit standing" class="box-shadow">
+      </picture>
     </footer>
   </body>
 </html>
