@@ -174,8 +174,9 @@ hr {
 .projects-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 25px;
-  margin: 5% 0;
+  margin: 2% 0;
 }
 
 .project-card {
@@ -269,6 +270,7 @@ footer > picture > img {
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
+  /* HEADER */
   p {
     font-size: 1.2rem;
   }
@@ -327,5 +329,14 @@ footer > picture > img {
     padding: 0 7%;
     margin-top: 37%;
     margin-bottom: 15%;
+  }
+
+  /* MAIN */
+  .projects-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .project-card {
+    max-width: 47.7%;
   }
 }
