@@ -40,6 +40,7 @@ html {
 header {
   position: relative;
   display: flex;
+  margin-bottom: 25%;
 }
 
 .name {
@@ -81,7 +82,6 @@ main,
 
 .about-me-container {
   margin-top: 10%;
-  margin-bottom: 25%;
 }
 
 .polygon-wrapper {
@@ -229,7 +229,7 @@ hr {
 /* FOOTER */
 footer {
   filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.65));
-  margin-top: 15%;
+  margin-top: 25%;
 }
 
 .footer-container {
@@ -288,6 +288,10 @@ footer hr.border {
 
 @media (min-width: 600px) and (max-width: 1024px) {
   /* HEADER */
+  header {
+    margin-bottom: 15%;
+  }
+
   p {
     font-size: 1.2rem;
   }
@@ -345,7 +349,6 @@ footer hr.border {
     position: relative;
     padding: 0 7%;
     margin-top: 37%;
-    margin-bottom: 15%;
   }
 
   /* MAIN */
@@ -363,6 +366,7 @@ footer hr.border {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 15%;
   }
 
   .footer-container {
