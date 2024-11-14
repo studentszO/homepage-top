@@ -4,7 +4,7 @@
   background-image: linear-gradient(
     108.7deg,
     rgb(43, 43, 43) 11%,
-    rgb(37, 37, 37) 88.2%
+    rgb(73, 73, 73) 88.2%
   );
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -153,7 +153,7 @@ hr {
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
     #b7ce82 0%,
-    #becf9500 90%
+    #becf95 90%
   );
   margin-bottom: 2px;
   margin-top: -6px;
@@ -298,8 +298,22 @@ footer hr.border {
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgb(46, 46, 46) 0%,
-    rgb(26, 26, 26) 90%
+    rgb(26, 26, 26) 50%
   );
+  background-size: 200% 200%;
+  animation: bg-anim 10s ease infinite;
+}
+
+@keyframes bg-anim {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
 }
 
 /* @media (min-width: 600px) and (max-width: 1024px) { */
